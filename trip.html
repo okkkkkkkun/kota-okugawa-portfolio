@@ -10,6 +10,46 @@
   </nav>
 </header>
 
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Trip – Kota Okugawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="./">kota okugawa</a>
+      <div class="links">
+        <a href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a aria-current="page" href="./trip.html">Trip</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>Trip</h1>
+      <p class="muted">旅ログやフォトへのリンクをここに配置（後でカード化も可能）。</p>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-meta">
+      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span class="muted">kota-okugawa.com</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
 
 
 <footer class="site-footer">
