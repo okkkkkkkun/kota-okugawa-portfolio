@@ -10,6 +10,58 @@
   </nav>
 </header>
 
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Work – Kota Okugawa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Works by Kota Okugawa">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="./">kota okugawa</a>
+      <div class="links">
+        <a href="./about.html">About</a>
+        <a aria-current="page" href="./work.html">Work</a>
+        <a href="./trip.html">Trip</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding:36px 0">
+    <div class="container">
+      <h1 class="title" style="margin-bottom:6px">Work</h1>
+      <p class="subtitle muted">Architecture / Digital Design / Simulation</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:28px">
+    <div class="container">
+      <div class="filters" role="tablist" aria-label="Work filters">
+        <button class="filter is-active" data-filter="">All</button>
+        <button class="filter" data-filter="architecture">Architecture</button>
+        <button class="filter" data-filter="parametric">Parametric</button>
+        <button class="filter" data-filter="simulation">Simulation</button>
+        <button class="filter" data-filter="visualization">Visualization</button>
+      </div>
+      <div id="works-grid" class="grid" style="margin-top:18px"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-meta">
+      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span class="muted">kota-okugawa.com</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./assets/js/work-page.js"></script>
+</body>
+</html>
 
 
 <footer class="site-footer">
