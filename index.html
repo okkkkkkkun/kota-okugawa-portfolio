@@ -1,109 +1,22 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>奥川 航大 | Kota Okugawa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kota Okugawa – portfolio site">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="奥川 航大 | Kota Okugawa">
-  <meta property="og:url" content="https://kota-okugawa.com/">
-  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
-  <link rel="preconnect" href="https://static.kota-okugawa.com">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  <!-- ナビゲーション -->
-  <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
-      <a class="brand" href="#top">kota okugawa</a>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#trip">Trip</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ヒーロー（トップ） -->
-  <section id="top" class="hero">
-    <div class="container hero__inner">
-      <div>
-        <h1 class="title">奥川 航大 | Kota Okugawa</h1>
-        <p class="subtitle">portfolio site</p>
-        <div class="hero__cta">
-          <a class="btn" href="#work">To my works</a>
-        </div>
-        <ul class="sns">
-          <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a></li>
-          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
-        </ul>
-      </div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Primary">
+    <a class="brand" href="./">kota okugawa</a>
+    <div class="links">
+      <a href="./about.html">About</a>
+      <a href="./work.html">Work</a>
+      <a href="./trip.html">Trip</a>
+      <a href="./contact.html">Contact</a>
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- About（プロフィール画像＋略歴） -->
-  <section id="about" class="section">
-    <div class="container about">
-      <figure class="about__photo">
-        <!-- R2に置いた実画像URLへ差し替え -->
-        <img src="https://static.kota-okugawa.com/profile/profile-800.webp"
-             srcset="https://static.kota-okugawa.com/profile/profile-800.webp 800w,
-                     https://static.kota-okugawa.com/profile/profile-1200.webp 1200w"
-             sizes="(max-width: 900px) 90vw, 420px"
-             alt="Kota Okugawa profile" width="800" height="1000" loading="lazy">
-      </figure>
-      <div class="about__body">
-        <h2>About</h2>
-        <dl class="bio">
-          <dt>略歴</dt>
-          <dd>1998 広島県広島市生まれ</dd>
-          <dd>2016 広陵高等学校普通科 卒業</dd>
-          <dd>2020 広島工業大学環境学部建築デザイン学科 卒業</dd>
-          <dd>2023 広島工業大学大学院工学系研究科環境学専攻 卒業</dd>
-          <dd>2023 鹿島建設株式会社 建築設計本部 デジタルデザイン統括グループ 入社</dd>
-        </dl>
-        <p class="about__btnwrap">
-          <a class="btn" href="#work">To my works</a>
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Work（プレースホルダ：後でカード一覧に差し替え） -->
-  <section id="work" class="section">
-    <div class="container">
-      <h2>Work</h2>
-      <p class="muted">※ 後で作品グリッドをここに実装（JSON駆動で差し替え可）。</p>
-    </div>
-  </section>
 
-  <!-- Trip（プレースホルダ） -->
-  <section id="trip" class="section">
-    <div class="container">
-      <h2>Trip</h2>
-      <p class="muted">※ 旅ログやフォトへのリンクを並べる想定。</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>ご連絡は <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a> へ。</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
-      <span class="muted">kota-okugawa.com</span>
-    </div>
-  </footer>
-
-  <script src="./assets/js/main.js"></script>
+<footer class="site-footer">
+  <div class="container footer-meta">
+    <span>© <span id="y"></span> Kota Okugawa</span>
+    <span class="muted">kota-okugawa.com</span>
+  </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+</footer>
+<script src="./assets/js/main.js"></script>
