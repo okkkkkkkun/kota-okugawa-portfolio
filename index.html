@@ -2,87 +2,93 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Kota Okugawa – Architecture / Digital Design</title>
+  <title>奥川 航大 | Kota Okugawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kota Okugawa Portfolio – Architecture × Computational Design × Environmental Simulation">
+  <meta name="description" content="Kota Okugawa – portfolio site">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kota Okugawa – Architecture / Digital Design">
+  <meta property="og:title" content="奥川 航大 | Kota Okugawa">
   <meta property="og:url" content="https://kota-okugawa.com/">
   <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
   <link rel="preconnect" href="https://static.kota-okugawa.com">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <!-- ヘッダー（シンプルなロゴ＋ナビ） -->
+  <!-- ナビゲーション -->
   <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">Kota Okugawa</a>
-      <nav class="links" aria-label="Primary">
-        <a href="#works">Works</a>
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">kota okugawa</a>
+      <div class="links">
         <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#trip">Trip</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- ファーストビュー（ヒーロー） -->
-  <section class="hero" role="banner">
+  <!-- ヒーロー（トップ） -->
+  <section id="top" class="hero">
     <div class="container hero__inner">
-      <div class="hero__copy">
-        <h1 class="hero__title">
-          Architecture × Digital Design
-        </h1>
-        <p class="hero__lead">
-          環境シミュレーション／パラメトリックデザイン／可視化で、意思決定を加速するポートフォリオ。
-        </p>
+      <div>
+        <h1 class="title">奥川 航大 | Kota Okugawa</h1>
+        <p class="subtitle">portfolio site</p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#works">作品を見る</a>
-          <a class="btn btn--ghost" href="#about">自己紹介</a>
+          <a class="btn" href="#work">To my works</a>
         </div>
-        <ul class="hero__meta" aria-label="Key capabilities">
-          <li>Rhino/Grasshopper・Revit</li>
-          <li>Python / C#</li>
-          <li>Daylight / Visual Comfort</li>
+        <ul class="sns">
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
         </ul>
       </div>
-
-      <!-- 右側に代表作の大きめサムネ（R2想定：差し替え推奨） -->
-      <figure class="hero__thumb">
-        <img
-          src="https://static.kota-okugawa.com/hero/cover-1600.webp"
-          srcset="
-            https://static.kota-okugawa.com/hero/cover-800.webp 800w,
-            https://static.kota-okugawa.com/hero/cover-1200.webp 1200w,
-            https://static.kota-okugawa.com/hero/cover-1600.webp 1600w"
-          sizes="(max-width: 980px) 100vw, 50vw"
-          alt="Representative work hero image"
-          width="1600" height="1000" loading="eager" fetchpriority="high">
-        <figcaption class="visually-hidden">代表作のビジュアル</figcaption>
-      </figure>
-    </div>
-
-    <!-- スクロール誘導 -->
-    <button class="scroll-indicator" aria-label="Scroll to works" data-scroll="#works">
-      <span>Scroll</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-6-6h12z"/></svg>
-    </button>
-  </section>
-
-  <!-- 以下はダミー：次段のアンカーだけ。後で本実装に差し替え -->
-  <section id="works" class="section">
-    <div class="container">
-      <h2>Works（次にここを作り込む）</h2>
-      <p class="muted">このセクションは後で作品グリッドに差し替えます。</p>
     </div>
   </section>
 
+  <!-- About（プロフィール画像＋略歴） -->
   <section id="about" class="section">
-    <div class="container">
-      <h2>About</h2>
-      <p>建築設計／デジタルデザイン／エンジニアリング。</p>
+    <div class="container about">
+      <figure class="about__photo">
+        <!-- R2に置いた実画像URLへ差し替え -->
+        <img src="https://static.kota-okugawa.com/profile/profile-800.webp"
+             srcset="https://static.kota-okugawa.com/profile/profile-800.webp 800w,
+                     https://static.kota-okugawa.com/profile/profile-1200.webp 1200w"
+             sizes="(max-width: 900px) 90vw, 420px"
+             alt="Kota Okugawa profile" width="800" height="1000" loading="lazy">
+      </figure>
+      <div class="about__body">
+        <h2>About</h2>
+        <dl class="bio">
+          <dt>略歴</dt>
+          <dd>1998 広島県広島市生まれ</dd>
+          <dd>2016 広陵高等学校普通科 卒業</dd>
+          <dd>2020 広島工業大学環境学部建築デザイン学科 卒業</dd>
+          <dd>2023 広島工業大学大学院工学系研究科環境学専攻 卒業</dd>
+          <dd>2023 鹿島建設株式会社 建築設計本部 デジタルデザイン統括グループ 入社</dd>
+        </dl>
+        <p class="about__btnwrap">
+          <a class="btn" href="#work">To my works</a>
+        </p>
+      </div>
     </div>
   </section>
 
+  <!-- Work（プレースホルダ：後でカード一覧に差し替え） -->
+  <section id="work" class="section">
+    <div class="container">
+      <h2>Work</h2>
+      <p class="muted">※ 後で作品グリッドをここに実装（JSON駆動で差し替え可）。</p>
+    </div>
+  </section>
+
+  <!-- Trip（プレースホルダ） -->
+  <section id="trip" class="section">
+    <div class="container">
+      <h2>Trip</h2>
+      <p class="muted">※ 旅ログやフォトへのリンクを並べる想定。</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
@@ -97,10 +103,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/hero.js"></script>
-  <script>
-    // 年表示
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="./assets/js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
