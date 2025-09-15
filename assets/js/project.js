@@ -1,48 +1,37 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>Project – Kota Okugawa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Project – Kota Okugawa">
-  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  <!-- header -->
-  <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
-      <a class="brand" href="./">kota okugawa</a>
-      <div class="links">
-        <a href="./about.html">About</a>
-        <a href="./work.html">Work</a>
-        <a href="./trip.html">Trip</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
+(function(){
+  const slug = new URL(location).searchParams.get('id');
+  const base = location.pathname.replace(/[^/]*$/, '');
+  fetch(`${base}data/projects.json`, { cache: 'no-store' })
+    .then(r=>r.json())
+    .then(list=>{
+      const p = list.find(x=>x.slug===slug) || list[0];
+      if(!p) return;
 
-  <main class="section">
-    <div class="container">
-      <h1 id="title" style="margin-bottom:8px"></h1>
-      <p id="desc" class="muted"></p>
-      <table class="meta-table" style="width:100%;border-collapse:collapse;margin:16px 0">
-        <tbody id="meta"></tbody>
-      </table>
-      <div id="gallery" class="gallery"></div>
-    </div>
-  </main>
+      document.title = `${p.title} – Kota Okugawa`;
+      document.getElementById('title').textContent = p.title;
+      document.getElementById('desc').textContent = p.description || '';
 
-  <!-- footer -->
-  <footer class="site-footer">
-    <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
-      <span class="muted">kota-okugawa.com</span>
-    </div>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  <script src="./assets/js/project.js"></script>
-</body>
-</html>
+      const rows = [];
+      if(p.year)   rows.push(['Year', p.year]);
+      if(p.role)   rows.push(['Role', p.role]);
+      if(p.client) rows.push(['Client', p.client]);
+      if(p.tags && p.tags.length) rows.push(['Tags', p.tags.join(', ')]);
+      document.getElementById('meta').innerHTML =
+        rows.map(([k,v])=>`<tr><td style="width:110px;border-top:1px solid var(--line);padding:8px 0;color:var(--muted)">${k}</td><td style="border-top:1px solid var(--line);padding:8px 0;color:var(--muted)">${v}</td></tr>`).join('');
 
+      const gallery = document.getElementById('gallery');
+      const mk = (src, alt)=>{
+        const m = src.match(/(.*)-\d+\.(webp|avif|jpg|jpeg|png)$/i);
+        const base = m? m[1] : src.replace(/\.(\w+)$/,'');
+        const ext  = (m? m[2] : (src.split('.').pop()||'webp')).toLowerCase();
+        const img  = document.createElement('img');
+        img.loading = 'lazy'; img.alt = alt || p.title;
+        img.src    = `${base}-800.${ext}`;
+        img.srcset = `${base}-800.${ext} 800w, ${base}-1200.${ext} 1200w, ${base}-1600.${ext} 1600w`;
+        img.sizes  = '(max-width: 900px) 100vw, 800px';
+        return img;
+      };
+      (p.images||[]).forEach(x=>gallery.appendChild(mk(x.src, x.caption)));
+    })
+    .catch(console.error);
+})();
