@@ -1,10 +1,21 @@
-// Smooth scroll for #anchors
-document.addEventListener('click', (e)=>{
-  const a = e.target.closest('a[href^="#"]');
-  if(!a) return;
-  const id = a.getAttribute('href');
-  if(id.length > 1){
-    const el = document.querySelector(id);
-    if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
-  }
-});
+(function(){
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.addEventListener('click', (event) => {
+    const anchor = event.target.closest('a[href^="#"]');
+    if(!anchor) return;
+    const id = anchor.getAttribute('href');
+    if(!id || id === '#') return;
+    const target = document.querySelector(id);
+    if(!target) return;
+
+    event.preventDefault();
+    const behavior = prefersReducedMotion.matches ? 'auto' : 'smooth';
+    target.scrollIntoView({ behavior, block: 'start' });
+  }, { capture: true });
+
+  const year = new Date().getFullYear();
+  document.querySelectorAll('[data-year]').forEach(el => {
+    el.textContent = year;
+  });
+})();
