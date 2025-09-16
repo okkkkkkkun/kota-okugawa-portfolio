@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kota Okugawa – Portfolio</title>
   <meta name="description" content="Architect / computational designer Kota Okugawa のポートフォリオ。建築設計・デジタルデザイン・シミュレーションのプロジェクトを紹介します。">
@@ -16,49 +17,49 @@
   <link rel="preconnect" href="https://static.kota-okugawa.com">
   <link rel="stylesheet" href="./assets/css/style.css">
   <style>
-    body {
-      background: url('https://pub-47d33dd99ef84f2d914d1825c4839e75.r2.dev/1-P1004005.jpg') no-repeat center center fixed;
-      background-size: cover;
+    /* --- Legacy splash layout like the sample --- */
+    :root{ --splash-bg:#454545; --splash-fg:#fff; --accent:#ffff00; }
+    html,body{height:100%}
+    body.splash{
+      margin:0; color:var(--splash-fg); background:#454545 url('images/back.jpg') center/cover fixed no-repeat;
+      display:flex; align-items:center; justify-content:center; text-align:center;
+      font-family: Century Gothic, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     }
+    .splash__wrap{padding:6vh 24px; backdrop-filter:saturate(120%) blur(0px)}
+    .splash__title{font-size:clamp(40px,8vw,96px); letter-spacing:.08em; margin:0 0 .2em; font-weight:700}
+    .splash__subtitle{font-size:clamp(28px,6vw,64px); color:#000; -webkit-text-stroke: .6px #000; font-weight:700; margin:0 0 1.2em}
+    .splash__nav{list-style:none; padding:0; margin:1.2em 0 0; display:grid; gap:.6em}
+    .splash__nav a{ color:var(--splash-fg); text-decoration:none; font-size:clamp(14px,2.6vw,20px); letter-spacing:.18em }
+    .splash__nav a:hover{ color:var(--accent) }
+    .splash__footer{margin-top:8vh; font-size:12px; color:#ddd}
+    .splash__footer a{ color:#ddd; text-decoration:none }
+    .splash__footer a:hover{ color:var(--accent)}
+    /* keep existing header/footer hidden on this splash page */
+    .site-header, .site-footer{ display:none }
   </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="./">KOTA OKUGAWA</a>
-      <nav class="nav__links" aria-label="Primary">
-        <a aria-current="page" href="./">HOME</a>
-        <a href="./about.html">ABOUT</a>
-        <a href="./work.html">WORK</a>
-        <a href="./trip.html">TRIP</a>
-        <a href="./contact.html">CONTACT</a>
-      </nav>
+<body class="splash">
+  <div class="splash__wrap" role="main">
+    <h1 class="splash__title">KOTA OKUGAWA</h1>
+    <div class="splash__subtitle">PORTFOLIO SITE</div>
+
+    <ul class="splash__nav" aria-label="Primary">
+      <li><a href="./about.html">01_PROFILE</a></li>
+      <li><a href="./work.html">02_WORK</a></li>
+      <li><a href="./trip.html">03_TRIP</a></li>
+      <li><a href="./contact.html">04_CONTACT</a></li>
+    </ul>
+
+    <div class="splash__footer">
+      <div>© <span data-year></span> Kota Okugawa / kota-okugawa.com</div>
+      <!-- 任意：連絡先表記が必要なら以下を解除して使用してください。機微情報を含むためGitHubに公開する際はご注意を。 -->
+      <!-- <div>建築設計本部 / デジタルデザイン統括グループ 奥川航大</div> -->
+      <!-- <div>mail：hello@kota-okugawa.com</div> -->
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="container">
-        <p class="hero__tagline">Architect / Computational Designer</p>
-        <h1 class="hero__title">Kota Okugawa</h1>
-        <p class="hero__lead">建築設計・デジタルデザイン・シミュレーションを軸に、都市とデジタルが重なる領域で実験を続けています。リアルとバーチャルの行き来を前提にした体験を設計し、最適化と情緒を両立させることを目指しています。</p>
-        <div class="hero__actions">
-          <a class="btn" href="./work.html">View Works</a>
-          <a class="btn btn--ghost" href="#about">Scroll to About</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-meta">
-      <span>© <span data-year></span> Kota Okugawa</span>
-      <span class="muted">kota-okugawa.com</span>
-      <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a>
-    </div>
-  </footer>
-
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/home.js"></script>
+  <script>
+    document.querySelector('[data-year]').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
