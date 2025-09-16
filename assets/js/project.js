@@ -67,18 +67,6 @@
         descEl.style.display = description ? '' : 'none';
       }
 
-      const tagsEl = document.getElementById('tags');
-      if(tagsEl){
-        tagsEl.innerHTML = '';
-        (project.tags || []).forEach(tag => {
-          const li = document.createElement('li');
-          li.className = 'tag';
-          li.textContent = tag;
-          tagsEl.appendChild(li);
-        });
-        tagsEl.hidden = !(project.tags && project.tags.length);
-      }
-
       const metaEl = document.getElementById('meta');
       if(metaEl){
         const rows = [];
