@@ -1,0 +1,287 @@
+[
+  {
+    "slug": "yamanefukuoka",
+    "title": "Yamane Dental Clinic Fukuoka",
+    "year": "2023",
+    "tags": ["Architecture", "Healthcare", "Interior"],
+    "cover": "https://static.kota-okugawa.com/works/yamanefukuoka/cover-1200.webp",
+    "description": "福岡市天神に計画した歯科クリニックの改修プロジェクト。既存躯体を読み替えながら、患者とスタッフが落ち着いて過ごせる柔らかな空間を目指した。",
+    "role": "Spatial Design / Visualization",
+    "client": "Yamane Dental Clinic",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuoka/01-1600.webp", "caption": "Waiting lounge perspective" },
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuoka/02-1600.webp", "caption": "Treatment room" },
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuoka/03-1600.webp", "caption": "Material study" }
+    ]
+  },
+  {
+    "slug": "yamanefukuyama",
+    "title": "Yamane Dental Clinic Fukuyama",
+    "year": "2022",
+    "tags": ["Architecture", "Healthcare", "Lighting"],
+    "cover": "https://static.kota-okugawa.com/works/yamanefukuyama/cover-1200.webp",
+    "description": "福山市に新設された歯科クリニック。コンパクトな平面の中で採光とオープンネスを両立させるため、トップライトと緩やかな仕切りを組み合わせた。",
+    "role": "Design / Daylight Simulation",
+    "client": "Yamane Dental Clinic",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuyama/01-1600.webp", "caption": "Facade concept" },
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuyama/02-1600.webp", "caption": "Interior study" },
+      { "src": "https://static.kota-okugawa.com/works/yamanefukuyama/03-1600.webp", "caption": "Lighting simulation" }
+    ]
+  },
+  {
+    "slug": "virtual-hit",
+    "title": "Virtual HIT Campus",
+    "year": "2021",
+    "tags": ["Digital", "XR", "Research"],
+    "cover": "https://static.kota-okugawa.com/works/virtual-hit/cover-1200.webp",
+    "description": "広島工業大学のキャンパスをバーチャル空間上で再現し、学内ガイドやイベントに活用するプラットフォームを構築。リアルタイムでの空間共有を実験した。",
+    "role": "Experience Design / Technical Direction",
+    "client": "Hiroshima Institute of Technology",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/virtual-hit/01-1600.webp", "caption": "Virtual quad" },
+      { "src": "https://static.kota-okugawa.com/works/virtual-hit/02-1600.webp", "caption": "Avatar meeting" },
+      { "src": "https://static.kota-okugawa.com/works/virtual-hit/03-1600.webp", "caption": "Interaction prototype" }
+    ]
+  },
+  {
+    "slug": "daiwa-hiroshima",
+    "title": "Daiwa Hiroshima Hub",
+    "year": "2023",
+    "tags": ["Architecture", "Exhibition", "Parametric"],
+    "cover": "https://static.kota-okugawa.com/works/daiwa-hiroshima/cover-1200.webp",
+    "description": "広島本社のエントランス更新に合わせて、都市と企業の歴史を編む立体展示を計画。動線に沿って変化するメッシュ状のスクリーンをパラメトリックに設計した。",
+    "role": "Concept / Parametric Design",
+    "client": "Daiwa House Group",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/daiwa-hiroshima/01-1600.webp", "caption": "Entrance perspective" },
+      { "src": "https://static.kota-okugawa.com/works/daiwa-hiroshima/02-1600.webp", "caption": "Parametric study" },
+      { "src": "https://static.kota-okugawa.com/works/daiwa-hiroshima/03-1600.webp", "caption": "Lighting scenario" }
+    ]
+  },
+  {
+    "slug": "aavs-osaka-2019",
+    "title": "AA Visiting School Osaka 2019",
+    "year": "2019",
+    "tags": ["Workshop", "Fabrication", "Parametric"],
+    "cover": "https://static.kota-okugawa.com/works/aavs-osaka-2019/cover-1200.webp",
+    "description": "AA Visiting School Osaka 2019 でのモジュールファブリケーションワークショップ。紙管と熱収縮チューブを用い、都市の余白に馴染む可変構造を制作した。",
+    "role": "Team Tutor / Fabrication",
+    "client": "AA Visiting School",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/aavs-osaka-2019/01-1600.webp", "caption": "Module aggregation" },
+      { "src": "https://static.kota-okugawa.com/works/aavs-osaka-2019/02-1600.webp", "caption": "Workshop process" },
+      { "src": "https://static.kota-okugawa.com/works/aavs-osaka-2019/03-1600.webp", "caption": "Night view" }
+    ]
+  },
+  {
+    "slug": "appel-peal",
+    "title": "Appel Peal Installation",
+    "year": "2020",
+    "tags": ["Installation", "Sound", "Interactive"],
+    "cover": "https://static.kota-okugawa.com/works/appel-peal/cover-1200.webp",
+    "description": "残響する鐘の音を視覚化するインスタレーション。金属の薄板に音の振幅データを刻み込み、来場者が触れることで光と音が同期して変化する。",
+    "role": "Design / Programming",
+    "client": "Self initiated",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/appel-peal/01-1600.webp", "caption": "Installation view" },
+      { "src": "https://static.kota-okugawa.com/works/appel-peal/02-1600.webp", "caption": "Sensor prototype" },
+      { "src": "https://static.kota-okugawa.com/works/appel-peal/03-1600.webp", "caption": "Light animation" }
+    ]
+  },
+  {
+    "slug": "completement-virtual",
+    "title": "Complètement Virtual",
+    "year": "2020",
+    "tags": ["Digital", "Virtual Production", "Research"],
+    "cover": "https://static.kota-okugawa.com/works/completement-virtual/cover-1200.webp",
+    "description": "物理空間とバーチャルを横断するライブパフォーマンスのためのステージデザイン。ダンサーの動きをセンシングし、仮想空間の構造物をリアルタイムに変形させた。",
+    "role": "Stage Design / Technical Artist",
+    "client": "Media Performance Lab",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/completement-virtual/01-1600.webp", "caption": "Stage overview" },
+      { "src": "https://static.kota-okugawa.com/works/completement-virtual/02-1600.webp", "caption": "Motion capture" },
+      { "src": "https://static.kota-okugawa.com/works/completement-virtual/03-1600.webp", "caption": "Realtime composition" }
+    ]
+  },
+  {
+    "slug": "miyajima-ws",
+    "title": "Miyajima Workshop",
+    "year": "2018",
+    "tags": ["Workshop", "Community", "Landscape"],
+    "cover": "https://static.kota-okugawa.com/works/miyajima-ws/cover-1200.webp",
+    "description": "宮島での地域ワークショップ。神社と町家をつなぐ小さな休憩所を地元の学生と共同で製作し、観光動線に開かれた場を作り出した。",
+    "role": "Facilitator / Design",
+    "client": "Miyajima Town",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/miyajima-ws/01-1600.webp", "caption": "Workshop scenery" },
+      { "src": "https://static.kota-okugawa.com/works/miyajima-ws/02-1600.webp", "caption": "Participants" },
+      { "src": "https://static.kota-okugawa.com/works/miyajima-ws/03-1600.webp", "caption": "Built structure" }
+    ]
+  },
+  {
+    "slug": "transition-tea-house",
+    "title": "Transition Tea House",
+    "year": "2018",
+    "tags": ["Architecture", "Pavilion", "Parametric"],
+    "cover": "https://static.kota-okugawa.com/works/transition-tea-house/cover-1200.webp",
+    "description": "伝統的な茶室の寸法体系を現代的に読み替えた仮設茶室。布と竹を織り交ぜた柔らかな殻が時間とともに形を変え、人の居方を誘導する。",
+    "role": "Design Lead / Fabrication",
+    "client": "Exhibition Project",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/transition-tea-house/01-1600.webp", "caption": "Tea house interior" },
+      { "src": "https://static.kota-okugawa.com/works/transition-tea-house/02-1600.webp", "caption": "Structural weave" },
+      { "src": "https://static.kota-okugawa.com/works/transition-tea-house/03-1600.webp", "caption": "Night illumination" }
+    ]
+  },
+  {
+    "slug": "boxes-house",
+    "title": "Boxes House",
+    "year": "2017",
+    "tags": ["Architecture", "Housing", "Study"],
+    "cover": "https://static.kota-okugawa.com/works/boxes-house/cover-1200.webp",
+    "description": "箱を積層させたような断面構成を持つ住宅スタディ。内外の段差を利用して多層的な生活シーンを作り出す。",
+    "role": "Design Study",
+    "client": "Academic Project",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/boxes-house/01-1600.webp", "caption": "Axonometric view" },
+      { "src": "https://static.kota-okugawa.com/works/boxes-house/02-1600.webp", "caption": "Section perspective" },
+      { "src": "https://static.kota-okugawa.com/works/boxes-house/03-1600.webp", "caption": "Material palette" }
+    ]
+  },
+  {
+    "slug": "polygon-space",
+    "title": "Polygon Space",
+    "year": "2017",
+    "tags": ["Installation", "Digital", "Light"],
+    "cover": "https://static.kota-okugawa.com/works/polygon-space/cover-1200.webp",
+    "description": "多角形に分割されたスクリーンを通じて光を制御する空間インスタレーション。来場者の動きに合わせて光がポリゴン状に分裂し、空間の奥行きを変化させる。",
+    "role": "Concept / Interactive Design",
+    "client": "Media Art Exhibition",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/polygon-space/01-1600.webp", "caption": "Installation view" },
+      { "src": "https://static.kota-okugawa.com/works/polygon-space/02-1600.webp", "caption": "Projection mapping" },
+      { "src": "https://static.kota-okugawa.com/works/polygon-space/03-1600.webp", "caption": "Light pattern" }
+    ]
+  },
+  {
+    "slug": "net-shpping-for-2045",
+    "title": "Net Shopping for 2045",
+    "year": "2016",
+    "tags": ["Speculative", "Research", "UI"],
+    "cover": "https://static.kota-okugawa.com/works/net-shpping-for-2045/cover-1200.webp",
+    "description": "2045 年のネットショッピング体験を想定したリサーチ。配送ドローンと地域拠点を組み合わせた購買のエコシステムをビジュアライズした。",
+    "role": "Scenario Design",
+    "client": "Academic Project",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/net-shpping-for-2045/01-1600.webp", "caption": "Service diagram" },
+      { "src": "https://static.kota-okugawa.com/works/net-shpping-for-2045/02-1600.webp", "caption": "Device mockup" },
+      { "src": "https://static.kota-okugawa.com/works/net-shpping-for-2045/03-1600.webp", "caption": "User journey" }
+    ]
+  },
+  {
+    "slug": "simple-a",
+    "title": "simple A",
+    "year": "2016",
+    "tags": ["Furniture", "Product", "Wood"],
+    "cover": "https://static.kota-okugawa.com/works/simple-a/cover-1200.webp",
+    "description": "A 字フレームを最小限の部材で構成した椅子のプロトタイプ。木材のたわみを活かしつつ、持ち運びやすさを追求した。",
+    "role": "Product Design",
+    "client": "Self initiated",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/simple-a/01-1600.webp", "caption": "Product photo" },
+      { "src": "https://static.kota-okugawa.com/works/simple-a/02-1600.webp", "caption": "Assembly detail" },
+      { "src": "https://static.kota-okugawa.com/works/simple-a/03-1600.webp", "caption": "Usage scene" }
+    ]
+  },
+  {
+    "slug": "1623edc62ea650",
+    "title": "1623edc62ea650",
+    "year": "2021",
+    "tags": ["Generative", "Research", "Data"],
+    "cover": "https://static.kota-okugawa.com/works/1623edc62ea650/cover-1200.webp",
+    "description": "都市のセンサーデータをもとに構造を生成するリサーチ。ランダムウォークで得られたトポロジーを建築ボリュームに変換し、データ・シティの姿を探った。",
+    "role": "Algorithm Design",
+    "client": "Research Project",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/1623edc62ea650/01-1600.webp", "caption": "Generative study" },
+      { "src": "https://static.kota-okugawa.com/works/1623edc62ea650/02-1600.webp", "caption": "Topology mapping" },
+      { "src": "https://static.kota-okugawa.com/works/1623edc62ea650/03-1600.webp", "caption": "Axonometric" }
+    ]
+  },
+  {
+    "slug": "emarf",
+    "title": "emarf Digital Fabrication",
+    "year": "2020",
+    "tags": ["Digital Fabrication", "Platform", "Research"],
+    "cover": "https://static.kota-okugawa.com/works/emarf/cover-1200.webp",
+    "description": "オンラインから CNC 加工までをつなぐプラットフォーム『emarf』の UI 設計。利用者のカスタマイズ操作を最短で完了できるよう情報設計を行った。",
+    "role": "Service Design / Prototyping",
+    "client": "emarf",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/emarf/01-1600.webp", "caption": "Interface design" },
+      { "src": "https://static.kota-okugawa.com/works/emarf/02-1600.webp", "caption": "Process diagram" },
+      { "src": "https://static.kota-okugawa.com/works/emarf/03-1600.webp", "caption": "Fabrication workflow" }
+    ]
+  },
+  {
+    "slug": "sidetable",
+    "title": "Side Table",
+    "year": "2019",
+    "tags": ["Furniture", "Product", "Wood"],
+    "cover": "https://static.kota-okugawa.com/works/sidetable/cover-1200.webp",
+    "description": "居場所に寄り添うサイドテーブル。ソファ横やベッドサイドで使いやすい高さと移動のしやすさを、三次元曲面の脚で表現した。",
+    "role": "Furniture Design",
+    "client": "Self initiated",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/sidetable/01-1600.webp", "caption": "Table detail" },
+      { "src": "https://static.kota-okugawa.com/works/sidetable/02-1600.webp", "caption": "Usage scene" },
+      { "src": "https://static.kota-okugawa.com/works/sidetable/03-1600.webp", "caption": "Prototype" }
+    ]
+  },
+  {
+    "slug": "digifab-stool",
+    "title": "Digifab Stool",
+    "year": "2018",
+    "tags": ["Furniture", "Digital Fabrication", "Prototype"],
+    "cover": "https://static.kota-okugawa.com/works/digifab-stool/cover-1200.webp",
+    "description": "CNC で切り出した合板を組み合わせたスツール。デジタル加工と手仕上げを往復しながら、最低限のパーツで堅牢性を確保した。",
+    "role": "Design / Fabrication",
+    "client": "Academic Project",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/digifab-stool/01-1600.webp", "caption": "Assembled stool" },
+      { "src": "https://static.kota-okugawa.com/works/digifab-stool/02-1600.webp", "caption": "Fabrication" },
+      { "src": "https://static.kota-okugawa.com/works/digifab-stool/03-1600.webp", "caption": "Component layout" }
+    ]
+  },
+  {
+    "slug": "voronoi-clock",
+    "title": "Voronoi Clock",
+    "year": "2017",
+    "tags": ["Product", "Generative", "Experiment"],
+    "cover": "https://static.kota-okugawa.com/works/voronoi-clock/cover-1200.webp",
+    "description": "ボロノイ分割で刻々と形を変えるウォールクロック。各セルが時間を示すサインへと変換され、情報とプロダクトの関係を探った。",
+    "role": "Generative Design",
+    "client": "Self initiated",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock/01-1600.webp", "caption": "Clock face" },
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock/02-1600.webp", "caption": "Algorithm" },
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock/03-1600.webp", "caption": "Prototype" }
+    ]
+  },
+  {
+    "slug": "voronoi-clock-2",
+    "title": "Voronoi Clock 2",
+    "year": "2018",
+    "tags": ["Product", "Generative", "Lighting"],
+    "cover": "https://static.kota-okugawa.com/works/voronoi-clock-2/cover-1200.webp",
+    "description": "ボロノイクロックのアップデート版。二層構造のアクリルをレーザーカットし、背面からの光源で影と時間を立体的に演出した。",
+    "role": "Generative Design / Fabrication",
+    "client": "Self initiated",
+    "images": [
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock-2/01-1600.webp", "caption": "Layered clock" },
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock-2/02-1600.webp", "caption": "Light test" },
+      { "src": "https://static.kota-okugawa.com/works/voronoi-clock-2/03-1600.webp", "caption": "Detail" }
+    ]
+  }
+]

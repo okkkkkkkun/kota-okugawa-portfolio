@@ -2,39 +2,67 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Contact – Kota Okugawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Kota Okugawa</title>
+  <meta name="description" content="Kota Okugawa へのお問い合わせ。建築設計、デジタルデザイン、講演依頼などはこちらから。">
+  <link rel="canonical" href="https://kota-okugawa.com/contact">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kota Okugawa">
+  <meta property="og:title" content="Contact – Kota Okugawa">
+  <meta property="og:description" content="Kota Okugawa へのお問い合わせ。建築設計、デジタルデザイン、講演依頼などはこちらから。">
+  <meta property="og:url" content="https://kota-okugawa.com/contact">
+  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://static.kota-okugawa.com">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <!-- header -->
   <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
+    <div class="container nav">
       <a class="brand" href="./">kota okugawa</a>
-      <div class="links">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="./">Home</a>
         <a href="./about.html">About</a>
         <a href="./work.html">Work</a>
         <a href="./trip.html">Trip</a>
         <a aria-current="page" href="./contact.html">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h1>Contact</h1>
-      <p>ご連絡は <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a> へ。</p>
-    </div>
-  </section>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Contact</h1>
+        <p class="lead">コラボレーション、リサーチ、レクチャー、執筆などのお問い合わせは以下からご連絡ください。</p>
+      </div>
+    </section>
 
-  <!-- footer -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="contact-card">
+          <h2 style="margin-top:0">Let’s collaborate</h2>
+          <p>企画段階のディスカッションから、プロトタイプ制作、実装支援まで幅広く対応しています。建築設計・デジタルデザイン双方の知見を活かし、チームの一員として関わります。</p>
+          <ul class="contact-links">
+            <li><strong>Email:</strong> <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noopener">@kota_okugawa</a></li>
+            <li><strong>Twitter / X:</strong> <a href="https://twitter.com/" target="_blank" rel="noopener">@okugawakota</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/kota-okugawa</a></li>
+          </ul>
+          <p class="muted" style="margin-top:1.6rem">プレゼン資料やポートフォリオPDFの送付をご希望の場合はメールでお知らせください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
     <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span>© <span data-year></span> Kota Okugawa</span>
       <span class="muted">kota-okugawa.com</span>
+      <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

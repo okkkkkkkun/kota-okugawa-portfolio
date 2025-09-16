@@ -2,52 +2,60 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Work – Kota Okugawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Works by Kota Okugawa">
+  <title>Work – Kota Okugawa</title>
+  <meta name="description" content="Kota Okugawa の建築・デジタルデザイン・インスタレーションなどのプロジェクト一覧。カテゴリ別にフィルタできます。">
+  <link rel="canonical" href="https://kota-okugawa.com/work">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kota Okugawa">
+  <meta property="og:title" content="Work – Kota Okugawa">
+  <meta property="og:description" content="Kota Okugawa の建築・デジタルデザイン・インスタレーションなどのプロジェクト一覧。カテゴリ別にフィルタできます。">
+  <meta property="og:url" content="https://kota-okugawa.com/work">
+  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://static.kota-okugawa.com">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
+    <div class="container nav">
       <a class="brand" href="./">kota okugawa</a>
-      <div class="links">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="./">Home</a>
         <a href="./about.html">About</a>
         <a aria-current="page" href="./work.html">Work</a>
         <a href="./trip.html">Trip</a>
         <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero" style="padding:36px 0">
-    <div class="container">
-      <h1 class="title" style="margin-bottom:6px">Work</h1>
-      <p class="subtitle muted">Architecture / Digital Design / Simulation</p>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:28px">
-    <div class="container">
-      <div class="filters" role="tablist" aria-label="Work filters">
-        <button class="filter is-active" data-filter="">All</button>
-        <button class="filter" data-filter="architecture">Architecture</button>
-        <button class="filter" data-filter="parametric">Parametric</button>
-        <button class="filter" data-filter="simulation">Simulation</button>
-        <button class="filter" data-filter="visualization">Visualization</button>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Work</h1>
+        <p class="lead">Architecture / Digital Fabrication / Virtual Experience. 建築設計、デジタルデザイン、リサーチから構成されるプロジェクトを紹介します。</p>
+        <p class="muted">カテゴリを選ぶと関連するプロジェクトのみを表示します。タグは <strong>Architecture</strong>・<strong>Digital Fabrication</strong> など活動領域を示しています。</p>
       </div>
-      <div id="works-grid" class="grid" style="margin-top:18px"></div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="filters" data-filters role="tablist" aria-label="Work filters"></div>
+        <div id="works-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span>© <span data-year></span> Kota Okugawa</span>
       <span class="muted">kota-okugawa.com</span>
+      <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/work-page.js"></script>
 </body>
 </html>
-

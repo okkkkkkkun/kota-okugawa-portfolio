@@ -2,56 +2,132 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>About – Kota Okugawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About – Kota Okugawa</title>
+  <meta name="description" content="Kota Okugawa のプロフィール、略歴、スキルセット。建築設計とデジタルデザインの両面からプロジェクトを推進します。">
+  <link rel="canonical" href="https://kota-okugawa.com/about">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kota Okugawa">
+  <meta property="og:title" content="About – Kota Okugawa">
+  <meta property="og:description" content="Kota Okugawa のプロフィール、略歴、スキルセット。建築設計とデジタルデザインの両面からプロジェクトを推進します。">
+  <meta property="og:url" content="https://kota-okugawa.com/about">
+  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://static.kota-okugawa.com">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <!-- header（共通） -->
   <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
+    <div class="container nav">
       <a class="brand" href="./">kota okugawa</a>
-      <div class="links">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="./">Home</a>
         <a aria-current="page" href="./about.html">About</a>
         <a href="./work.html">Work</a>
         <a href="./trip.html">Trip</a>
         <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <div class="container about">
-      <figure class="about__photo">
-        <img
-          src="https://static.kota-okugawa.com/profile/profile-800.webp"
-          srcset="https://static.kota-okugawa.com/profile/profile-800.webp 800w, https://static.kota-okugawa.com/profile/profile-1200.webp 1200w"
-          sizes="(max-width: 900px) 90vw, 420px"
-          alt="Kota Okugawa profile" width="800" height="1000" loading="lazy">
-      </figure>
-      <div>
-        <h1>About</h1>
-        <dl class="bio">
-          <dt>略歴</dt>
-          <dd>1998 広島県広島市生まれ</dd>
-          <dd>2016 広陵高等学校普通科 卒業</dd>
-          <dd>2020 広島工業大学環境学部建築デザイン学科 卒業</dd>
-          <dd>2023 広島工業大学大学院工学系研究科環境学専攻 卒業</dd>
-          <dd>2023 鹿島建設株式会社 建築設計本部 デジタルデザイン統括グループ 入社</dd>
-        </dl>
-        <p style="margin-top:16px"><a class="btn" href="./work.html">To my works</a></p>
+  <main>
+    <section class="section">
+      <div class="container two-column">
+        <div>
+          <h1 class="section-title">About</h1>
+          <p class="lead">奥川 航大（おくがわ こうた）。建築設計とデジタルテクノロジーの境界領域で活動するデザイナー。空間の構想からデジタルツイン、体験の実装までを横断し、プロジェクトチームの触媒となることを目指しています。</p>
+          <p>学生時代から建築と情報の関係を追求。複雑な条件を持つ設計課題に対し、パラメトリックデザインや環境シミュレーションを活用しながら意思決定を支援してきました。XR やインタラクティブメディアの領域にも関心を持ち、身体とデジタル空間の接続方法を探っています。</p>
+          <ul class="inline-list">
+            <li>Based in Tokyo & Hiroshima</li>
+            <li>Architect / Computational Designer</li>
+            <li>鹿島建設株式会社 建築設計本部 所属</li>
+          </ul>
+        </div>
+        <article class="profile-card">
+          <figure>
+            <img src="https://static.kota-okugawa.com/profile/profile-800.webp"
+                 srcset="https://static.kota-okugawa.com/profile/profile-800.webp 800w, https://static.kota-okugawa.com/profile/profile-1200.webp 1200w"
+                 sizes="(max-width: 900px) 100vw, 420px"
+                 alt="Portrait of Kota Okugawa" width="800" height="1000" loading="lazy">
+          </figure>
+          <dl>
+            <dt>現在</dt>
+            <dd>鹿島建設株式会社 建築設計本部 デジタルデザイン統括グループ</dd>
+            <dt>出身</dt>
+            <dd>1998 広島県広島市生まれ</dd>
+            <dt>学歴</dt>
+            <dd>2020 広島工業大学 環境学部 建築デザイン学科 卒業</dd>
+            <dd>2023 広島工業大学大学院 工学系研究科 環境学専攻 修了</dd>
+            <dt>研究テーマ</dt>
+            <dd>Computational Design / Digital Fabrication / Immersive Experience</dd>
+          </dl>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer（共通） -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section-title">Biography</h2>
+        </div>
+        <dl class="timeline">
+          <div class="timeline__item">
+            <dt>2023 –</dt>
+            <dd>鹿島建設株式会社 建築設計本部 デジタルデザイン統括グループで建築・都市プロジェクトのデジタルデザインを担当。XR 連携や生成系デザイン、環境シミュレーションの導入を推進。</dd>
+          </div>
+          <div class="timeline__item">
+            <dt>2021 – 2023</dt>
+            <dd>広島工業大学大学院にて建築環境デザインを専攻。都市空間におけるデジタルツイン活用と体験設計を研究。</dd>
+          </div>
+          <div class="timeline__item">
+            <dt>2019 – 2021</dt>
+            <dd>大学在学中に国内外のワークショップに参加。AA Visiting School Osaka などでチューターを務め、パラメトリックデザイン教育に従事。</dd>
+          </div>
+          <div class="timeline__item">
+            <dt>2016 – 2019</dt>
+            <dd>広島工業大学 建築デザイン学科で学びながら、建築とメディアアートの領域で作品制作・展示を行う。</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column two-column--reverse">
+        <div>
+          <h2 class="section-title">Capabilities</h2>
+          <p class="lead">設計・デジタル技術・ビジュアライゼーションを行き来し、プロジェクトの初動から完成まで伴走します。</p>
+          <ul class="skills-list">
+            <li>Parametric design (Grasshopper / Rhino / Houdini)</li>
+            <li>Computational simulation (Ladybug Tools / CFD / EnergyPlus)</li>
+            <li>Realtime &amp; XR production (Unreal Engine / Unity / TouchDesigner)</li>
+            <li>Digital fabrication (Laser cutter / CNC / 3D printing)</li>
+            <li>Visualization &amp; storytelling (Enscape / V-Ray / After Effects)</li>
+            <li>Web / interactive prototyping (Three.js / Svelte / TypeScript)</li>
+          </ul>
+        </div>
+        <article class="profile-card">
+          <h3 style="margin-top:0">Awards &amp; Activities</h3>
+          <ul class="activities">
+            <li>2023｜広島工業大学大学院 優秀研究賞</li>
+            <li>2021｜VR デザインワークショップ「Virtual HIT」プロジェクトリード</li>
+            <li>2019｜AA Visiting School Osaka チューター</li>
+            <li>2018｜瀬戸内ワークショップ「Transition Tea House」リードデザイナー</li>
+            <li>2017｜Voronoi Clock シリーズ展示（Tokyo Designers Week）</li>
+          </ul>
+          <p style="margin-top:1.6rem" class="muted">詳細なプロジェクトは <a href="./work.html">Work</a> ページでご覧いただけます。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
     <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span>© <span data-year></span> Kota Okugawa</span>
       <span class="muted">kota-okugawa.com</span>
+      <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

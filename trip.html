@@ -2,39 +2,95 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Trip – Kota Okugawa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trip – Kota Okugawa</title>
+  <meta name="description" content="Kota Okugawa の旅ログ。建築視察やリサーチトリップの記録を紹介します。">
+  <link rel="canonical" href="https://kota-okugawa.com/trip">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kota Okugawa">
+  <meta property="og:title" content="Trip – Kota Okugawa">
+  <meta property="og:description" content="Kota Okugawa の旅ログ。建築視察やリサーチトリップの記録を紹介します。">
+  <meta property="og:url" content="https://kota-okugawa.com/trip">
+  <meta property="og:image" content="https://static.kota-okugawa.com/og/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://static.kota-okugawa.com">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <!-- header -->
   <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
+    <div class="container nav">
       <a class="brand" href="./">kota okugawa</a>
-      <div class="links">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="./">Home</a>
         <a href="./about.html">About</a>
         <a href="./work.html">Work</a>
         <a aria-current="page" href="./trip.html">Trip</a>
         <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h1>Trip</h1>
-      <p class="muted">旅ログやフォトへのリンクをここに配置（後でカード化も可能）。</p>
-    </div>
-  </section>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Trip</h1>
+        <p class="lead">建築や都市を体験するための旅を記録しています。現地で得た感覚やスケッチ、写真は次のプロジェクトのための素材になっています。</p>
+        <p class="muted">各ログは個人メモのため不定期更新。外部リンクからフォトログやノートにアクセスできます。</p>
+      </div>
+    </section>
 
-  <!-- footer -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="trip-grid">
+          <article class="trip-card">
+            <h3 class="trip-card__title">Nordic Public Architecture</h3>
+            <p class="trip-card__meta">2023 / Copenhagen, Helsinki</p>
+            <p class="muted">図書館やサウナ施設など、公共と暮らしがつながる建築を巡ったリサーチツアー。光の捉え方とマテリアル選定を詳細に記録。</p>
+            <a class="trip-card__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Photo highlights</a>
+          </article>
+          <article class="trip-card">
+            <h3 class="trip-card__title">Seoul Media Art Week</h3>
+            <p class="trip-card__meta">2021 / Seoul</p>
+            <p class="muted">没入型展示やXRイベントを視察。複数のメディアアート施設を巡り、インタラクティブな演出のリサーチを実施。</p>
+            <a class="trip-card__link" href="https://note.com/" target="_blank" rel="noopener">Travel note</a>
+          </article>
+          <article class="trip-card">
+            <h3 class="trip-card__title">瀬戸内アートアイランド</h3>
+            <p class="trip-card__meta">2022 / Naoshima, Teshima</p>
+            <p class="muted">島のランドスケープとアートが共存する環境を体験。素材と環境の呼応を、パビリオン設計のヒントとして整理。</p>
+            <a class="trip-card__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Sketch log</a>
+          </article>
+          <article class="trip-card">
+            <h3 class="trip-card__title">Desert &amp; Data</h3>
+            <p class="trip-card__meta">2020 / Dubai, Abu Dhabi</p>
+            <p class="muted">中東のスマートシティ構想と砂漠建築をリサーチ。高温環境におけるパッシブデザイン戦略を観察しシミュレーションへ展開。</p>
+            <a class="trip-card__link" href="https://twitter.com/" target="_blank" rel="noopener">Thread</a>
+          </article>
+          <article class="trip-card">
+            <h3 class="trip-card__title">Kyoto Craft Journey</h3>
+            <p class="trip-card__meta">2019 / Kyoto</p>
+            <p class="muted">伝統工芸と現代建築を横断的に視察。素材研究とプロトタイピングのためのヒアリングを実施。</p>
+            <a class="trip-card__link" href="https://note.com/" target="_blank" rel="noopener">Report</a>
+          </article>
+          <article class="trip-card">
+            <h3 class="trip-card__title">北海道ダイナミックランドスケープ</h3>
+            <p class="trip-card__meta">2018 / Hokkaido</p>
+            <p class="muted">広大なランドスケープと建築のスケール感を把握。気候に応じた断熱と構造形式を現地で確認。</p>
+            <a class="trip-card__link" href="https://www.facebook.com/" target="_blank" rel="noopener">Field notes</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
     <div class="container footer-meta">
-      <span>© <span id="y"></span> Kota Okugawa</span>
+      <span>© <span data-year></span> Kota Okugawa</span>
       <span class="muted">kota-okugawa.com</span>
+      <a href="mailto:hello@kota-okugawa.com">hello@kota-okugawa.com</a>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
