@@ -90,13 +90,6 @@
       year.textContent = project.year;
       sub.appendChild(year);
     }
-    (project.tags || []).slice(0, 2).forEach(tag => {
-      const span = document.createElement('span');
-      span.className = 'tag';
-      span.textContent = tag;
-      sub.appendChild(span);
-    });
-
     meta.appendChild(title);
     meta.appendChild(sub);
 
